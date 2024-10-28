@@ -11,8 +11,10 @@ Este repositório tem como objetivo armazenar o conhecimento adquirido na discip
     - **`Triangulo/`**: Implementação da classe Triângulo.
     - **`RevisaoOO/`**: Revisão de conceitos de OO.
   - **`Vetores/`**: Contém exercícios e exemplos relacionados a vetores.
+    - **`ExAula/`**: Exercícios sobre vetores realizados em aula.
     - **`Lista1/`**: Primeira lista de exercícios com vetores.
     - **`Lista2/`**: Segunda lista de exercícios com vetores.
+    - **`BibliotecaVetores`**: Classe com alguns métodos utilizados para a resolução dos exercícios, criada com o objetivo de treinar a modularização e evitar repetição de código
 
 ## Como Acessar os Arquivos
 
