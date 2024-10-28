@@ -117,4 +117,48 @@ public class BibliotecaVetores {
 
         return encontrado;
     }
+
+    /**
+     *
+     *Caso o número se encontre no vetor faz exclui o número usando shiftleft
+     *
+     * @param vet O vetor de inteiros onde será feita a busca.
+     * @param num O número a ser excluido do vetor.
+     * @return True caso excluido False caso não excluido
+     */
+    public static boolean excluir(int[] vet, int num) {
+        int pos = encontraNum(vet, num);
+        if(pos==-1){
+            return false;
+        }
+        else{
+            for(int i=pos; i<vet.length-1; i++) {
+                vet[i] = vet[i+1];
+            }
+            vet[vet.length-1] = 0;
+            return true;
+        }
+
+    }
+
+    /**
+     *
+     *Insere um valor no vetor
+     *
+     * @param vet O vetor que o número será inserido
+     * @param num O número a ser inserido no vetor
+     * @param pos, A posição em que o número será inserido
+     */
+    public static void insere(int[] vet, int num, int pos) {
+
+        if(pos<vet.length) {
+            vet[pos] = num;
+            System.out.println(num+" inserido com sucesso!");
+        }
+        else{
+            System.out.println("Index fora do range do vetor");
+        }
+    }
+
+
 }
