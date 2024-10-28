@@ -1,5 +1,5 @@
-package OO.ExIntegrador.Retangulo;
-import Retangulo.Retangulo;
+package OO.Retangulo;
+
 
 // Main da classe Retangulo
 public class Main {

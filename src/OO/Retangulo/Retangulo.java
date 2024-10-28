@@ -1,4 +1,4 @@
-package OO.ExIntegrador.Retangulo;
+package OO.Retangulo;
 
 /**
  * A classe Retangulo representa um retângulo definido por sua base e altura.
