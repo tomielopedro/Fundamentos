@@ -102,13 +102,13 @@ public class BibliotecaVetores {
      * @param num O número a ser procurado no vetor.
      */
     public static void encontrNum(int[] vet, int num) {
-        int cont = 0;
+        boolean encontrado = false;
         for (int i = 0; i < vet.length; i++) {
             if (vet[i] == num) {
                 System.out.println("Número "+num+" encontrado na posição: " + i);
-                cont++;
+                encontrado = true;
             }
         }
-        if(cont==0) System.out.println("Número "+num+" não encontrado no vetor");
+        if(!encontrado) System.out.println("Número "+num+" não encontrado no vetor");
     }
 }
