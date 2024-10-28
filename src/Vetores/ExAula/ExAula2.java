@@ -15,7 +15,7 @@ package Vetores.ExAula;
 *
 * */
 
-public class ExAula1 {
+public class ExAula2 {
 
     public static void main(String[] args) {
         // Declaração e inicialização do vetor de alturas
