@@ -1,6 +1,8 @@
 package Vetores.Lista2;
 import Vetores.BibliotecaVetores;
 
+import java.util.Scanner;
+
 /**
  * Classe Ex1
  * Este programa manipula dois vetores de inteiros do mesmo tamanho (6).
@@ -9,12 +11,13 @@ import Vetores.BibliotecaVetores;
  */
 public class Ex1 {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         // Declaração dos vetores
         int vet1[];
         int vet2[];
 
         // Lê os valores do primeiro vetor (vet1) do usuário
-        vet1 = BibliotecaVetores.leVetorInt(6); // Lê 6 inteiros do usuário
+        vet1 = BibliotecaVetores.leVetorInt(sc,6); // Lê 6 inteiros do usuário
         System.out.println("Vetor 1");
         BibliotecaVetores.mostraVetor(vet1); // Exibe os elementos do primeiro vetor
 

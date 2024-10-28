@@ -10,11 +10,21 @@ public class Ex4 {
     public static void main(String[] args) {
         // Declaração do vetor de inteiros
         int numeros[];
-
+        numeros = BibliotecaVetores.geraVetorAleatorio(20);
+        int posicao;
         // Lê 20 elementos inteiros do usuário e os armazena no vetor 'numeros'
-        numeros = BibliotecaVetores.leVetorInt(20);
+        //numeros = BibliotecaVetores.leVetorInt(20);
+
+        // Mostra vetor
+        BibliotecaVetores.mostraVetor(numeros);
 
         // Chama o método 'encontrNum' para procurar e exibir as posições do número 4 no vetor
-        BibliotecaVetores.encontrNum(numeros, 4);
+        posicao = BibliotecaVetores.encontraNum(numeros, 4);
+        if (posicao == -1) {
+            System.out.println("Valor não encontrado");
+        }
+        else {
+            System.out.println("Valor encontrado na posicao: " + posicao);
+        }
     }
 }

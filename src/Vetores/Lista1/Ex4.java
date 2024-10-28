@@ -8,10 +8,11 @@ import Vetores.BibliotecaVetores;
 
 public class Ex4 {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         int numeros[];
 
         // Lê 4 números inteiros do usuário e armazena no vetor `numeros`
-        numeros = BibliotecaVetores.leVetorInt(4);
+        numeros = BibliotecaVetores.leVetorInt(sc,4);
 
         // Exibe os elementos do vetor na ordem inversa
         System.out.println("-- Vetor inverso --");

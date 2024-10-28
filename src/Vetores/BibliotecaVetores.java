@@ -52,11 +52,12 @@ public class BibliotecaVetores {
     /**
      * Lê os valores de um vetor de inteiros a partir da entrada do usuário.
      *
+     * @param sc O scanner que será utilizado para ler as variaveis
      * @param tamanho O tamanho do vetor a ser lido.
      * @return Um vetor de inteiros preenchido com os valores fornecidos pelo usuário.
      */
-    public static int[] leVetorInt(int tamanho){
-        Scanner sc = new Scanner(System.in);
+    public static int[] leVetorInt(Scanner sc, int tamanho){
+
         int vet[] = new int[tamanho];
 
         for (int i = 0; i < vet.length; i++) {
@@ -96,19 +97,24 @@ public class BibliotecaVetores {
     }
 
     /**
-     * Procura por um número específico dentro de um vetor de inteiros e exibe sua posição.
+     *
+     *Busca um número específico em uma lista e retorna a posição da sua primeira ocorrência.
      *
      * @param vet O vetor de inteiros onde será feita a busca.
      * @param num O número a ser procurado no vetor.
+     * @return A posição da primeira ocorrência do número procurado
      */
-    public static void encontrNum(int[] vet, int num) {
-        boolean encontrado = false;
-        for (int i = 0; i < vet.length; i++) {
-            if (vet[i] == num) {
-                System.out.println("Número "+num+" encontrado na posição: " + i);
-                encontrado = true;
+    public static int encontraNum(int[] vet, int num) {
+        int encontrado = -1;
+        int cont = 0;
+
+        while(encontrado == -1 && cont < vet.length) {
+            if(vet[cont] == num) {
+                encontrado = cont;
             }
+            cont++;
         }
-        if(!encontrado) System.out.println("Número "+num+" não encontrado no vetor");
+
+        return encontrado;
     }
 }

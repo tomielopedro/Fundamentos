@@ -1,6 +1,8 @@
 package Vetores.Lista2;
 import Vetores.BibliotecaVetores;
 
+import java.util.Scanner;
+
 /**
  * Classe Ex2
  * Este programa lê dois vetores de inteiros: um vetor R de 5 elementos e um vetor S de 10 elementos.
@@ -9,16 +11,17 @@ import Vetores.BibliotecaVetores;
  */
 public class Ex2 {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         // Declaração dos vetores
         int vet5[], vet10[], vet15[];
 
         // Lê os valores do vetor R (vet5) do usuário
         System.out.println("-- Vetor 1 -- ");
-        vet5 = BibliotecaVetores.leVetorInt(5); // Lê 5 inteiros do usuário
+        vet5 = BibliotecaVetores.leVetorInt(sc, 5); // Lê 5 inteiros do usuário
 
         // Lê os valores do vetor S (vet10) do usuário
         System.out.println("-- Vetor 2 -- ");
-        vet10 = BibliotecaVetores.leVetorInt(10); // Lê 10 inteiros do usuário
+        vet10 = BibliotecaVetores.leVetorInt(sc,10); // Lê 10 inteiros do usuário
 
         // Preenche o vetor X (vet15) com os valores de vet5 e vet10
         vet15 = preencheVetor15(vet5, vet10); // Chama o método para preencher o vetor X
